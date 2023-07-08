@@ -1,4 +1,3 @@
-//Trying to fork
 /* Includes */
 #include "mbed.h"
 #include "HTS221Sensor.h"
@@ -15,7 +14,6 @@ static LSM6DSLSensor acc_gyro(&devI2c,0xD4,D4,D5); // high address
 static LIS3MDL magnetometer(&devI2c, 0x3C);
 static DigitalOut shutdown_pin(PC_6);
 static VL53L0X range(&devI2c, &shutdown_pin, PC_7, 0x52);
-int xcv = 0;
 
 
 // functions to print sensor data
